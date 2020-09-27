@@ -1,0 +1,56 @@
+<form id="formulaire" (ngSubmit)="onSubmit()" novalidate>
+
+        <div class="input-field">
+            <input id="inNom" type="text" required pattern="[A-Za-z]{*}" [(ngModel)]="nom" name="nom" appFormVerif>
+            <label>Nom</label>
+        </div>
+    
+        <div class="input-field">
+            <input id="inPrenom" type="text" required pattern="[A-Za-z]{*}"  [(ngModel)]="prenom" name="prenom">
+            <label>Prénom</label>
+        </div>
+
+        <div class="input-field">
+            <input id="inAdresse" type="text" required  [(ngModel)]="adresse" name="adresse"> 
+            <label>Adresse</label>
+        </div>
+    
+        <div class="input-field">
+            <input id="inCp" type="text" required pattern="[0-9]{5}" [(ngModel)]="cp" name="cp">
+            <label>Code postal</label>
+        </div>
+
+        <div class="input-field">
+            <input id="inVille" type="text" required [(ngModel)]="ville" name="ville">
+            <label>Ville</label>
+        </div>
+    
+        <div class="input-field">
+            <input id="inTel" type="text" required pattern="[0-9]{10}" [(ngModel)]="tel" name="tel">
+            <label>Téléphone</label>
+        </div>
+
+        <div class="input-field">
+            <input id="inMail" type="email" required [(ngModel)]="mail" name="mail">
+            <label>Email</label>
+        </div>
+    
+        <div class="input-field">
+            <input id="inCivilite" type="text" required pattern="[A-Za-z]{*}" [(ngModel)]="civ" name="civ">
+            <label>Civilité</label>
+        </div>
+
+        <div class="input-field">
+            <input id="inPassword" type="password" required [(ngModel)]="mdp" name="mdp">
+            <label>Mot de passe</label>
+        </div>
+    
+        <div class="input-field">
+            <input id="inLogin" type="password" required [(ngModel)]="mdpc" name="mdpc">
+            <label>Verification mot de passe</label>
+        </div>
+
+        <input type="submit" class="btn blue -darken 1" value="S'inscrire" />
+
+
+    </form>

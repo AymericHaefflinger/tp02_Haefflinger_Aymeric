@@ -1,0 +1,9 @@
+div { font-family: Lato; 
+                  background-color : #2196f3; 
+                  text-align: center; 
+                  position:fixed; 
+                  height:50px; 
+                  bottom:0px; 
+                  width : 100%;
+                  color: white;}
+p{top: 10px;}
